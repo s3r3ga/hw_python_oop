@@ -69,9 +69,8 @@ class Training:
         distance = self.get_distance()
         speed = self.get_mean_speed()
         calories = self.get_spent_calories()
-        info = InfoMessage(training_type, self.duration,
+        return InfoMessage(training_type, self.duration,
                            distance, speed, calories)
-        return info
 
 
 class Running(Training):
