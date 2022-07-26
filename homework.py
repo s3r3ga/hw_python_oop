@@ -76,7 +76,7 @@ class Training:
 class Running(Training):
     """Тренировка: бег."""
 
-    def __str__(self):
+    def __str__(self) -> str:
         return 'Running'
 
     def get_spent_calories(self) -> float:
